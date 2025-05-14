@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+body {
+  background: linear-gradient(180deg, rgb(37, 117, 68) 0%, #8dd0f5 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+  background-color: #5c54ed;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 2rem;
+  color: aliceblue;
+  border-radius: 1rem;
+}
+
+.form h3 {
+  margin-bottom: 1rem;
+}
+
+.form input {
+  padding: 0.8rem;
+  border: none;
+  flex: 1;
+  border-radius: 4px;
+}
+
+.form button {
+  padding: 0.8rem;
+  min-width: 50px;
+  margin-left: 8px;
+  background-color: #8dd0f5;
+  color: aliceblue;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#dados-previsao {
+  border-top: 1px solid #fff;
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+#dados-previsao h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+#dados-previsao i h2 {
+  font-size: 1rem;
+}
+#dados-previsao span:first-child {
+  margin-right: 1rem;
+}
+
+#description-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.6rem 0;
+}
+#description-container #description {
+  padding: 0;
+  margin-top: 1rem;
+}
+#details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#details-container #umidade {
+  border-right: 1px #fff;
+  margin: 0.6rem;
+  padding: 0.6rem;
+}

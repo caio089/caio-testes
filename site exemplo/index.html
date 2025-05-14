@@ -1,28 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<!--link do boostrap-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="styles.css" />
 
-<body>
-  <div class="mostrarclima d-flex justify-content-center align-items-center min-vh-100 bg-light ">
-    <h1 class="position-absolute top-0 left-50 right-0 transform">clima e tempo<h1>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+  />
+  <script src="js/scrpit.js" defer></script>
 
-      <div class="mostrartemp">
-      <p class="position-absolute" style="top: 500px; left: 600px; margin: 0; padding: 20px; height: 200px; transform: translateX(10%);">38c</p>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet"
+  />
+
+  <body>
+    <div class="container">
+      <div class="form">
+        <h3>confira o clima de uma cidade</h3>
+        <div class="form-input-container">
+          <input
+            type="text"
+            placeholder="digite o nome da cidade"
+            id="city-input"
+          />
+          <button id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <div id="dados-previsao">
+            <h2>
+              <i class="fa-solid fa-location-dot"></i>
+              <span id="city">maceio</span>
+            </h2>
+            <p id="temperatura"><span>38</span>&deg;C</p>
+            <div id="description-container">
+              <p id="description">nublado</p>
+            </div>
+            <div id="details-container">
+              <p id="umidade">
+                <i class="fa-solid fa-droplet"></i>
+                <span>48%</span>
+              </p>
+              <p id="vento">
+                <i class="fa-solid fa-wind"></i>
+                <span>5km/h</span>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="mostrarvel position-absolute " style="top: 500px ; right: 600px; margin: 0; padding: 20px; height: 200px;  transform: translateX(30%);">
-        <p>5km/h</p>
-      </div>
-      
-      <button onclick="clicar()" class=" btn btn-outline-success btn-sm position-absolute " style="top: 600px; left: 50%; transform: translateX(-50%); width: 150px;"> 
-        mostrar
-      </button>
-  </div>
-</body>
+    </div>
+  </body>
 </html>
