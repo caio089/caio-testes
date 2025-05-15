@@ -4,7 +4,7 @@
   font-family: "Ubuntu", sans-serif;
 }
 body {
-  background: linear-gradient(180deg, rgb(37, 117, 68) 0%, #8dd0f5 100%);
+  background: linear-gradient(180deg, rgb(9, 173, 238) 0%, #048549 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,11 +16,16 @@ body {
 }
 
 .container {
-  background-color: #5c54ed;
+  background-color: #202750;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 2rem;
   color: aliceblue;
   border-radius: 1rem;
+}
+
+#description {
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
 .form h3 {
