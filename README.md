@@ -1,3 +1,3 @@
-# caio testes numero 1
+# primeiro repositorio
 
-primeiro repositorio do caio, criado durante uma aula ao vivo
+site que mostra os dados do clima, temperatura... de uma determianada cidade do Brasil ou mundo
