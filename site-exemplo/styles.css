@@ -21,6 +21,8 @@ body {
   padding: 2rem;
   color: aliceblue;
   border-radius: 1rem;
+  position: relative;
+  z-index: 1;
 }
 
 #description {
@@ -64,7 +66,7 @@ body {
 }
 
 #dados-previsao i h2 {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 #dados-previsao span:first-child {
   margin-right: 1rem;
@@ -88,6 +90,26 @@ body {
 
 #details-container #umidade {
   border-right: 1px #fff;
-  margin: 0.6rem;
+  margin: 0.6rem 0.5rem 0.6rem 0;
   padding: 0.6rem;
+}
+
+.nuvem {
+  position: absolute;
+  top: -130px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1; /* fica atrás do conteúdo */
+  opacity: 0.8; /* efeito suave, opcional */
+}
+
+#clould {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  text-align: center;
+  margin-top: -50px;
 }
